@@ -2,327 +2,1395 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0a0d16">
-  <meta name="description" content="ANAZORI V16.0 Paper Presentation — Dibrugarh University. 5 November 2026.">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="theme-color"
+    content="#f7f7f3"
+  >
+
+  <meta
+    name="description"
+    content="ANAZORI V16.0 Paper Presentation — Dibrugarh University. 5 November 2026."
+  >
+
+  <meta
+    name="color-scheme"
+    content="light"
+  >
+
   <title>ANAZORI V16.0 | Paper Presentation</title>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Skip navigation for keyboard/screen-reader users -->
+  <a class="skip-link" href="#main-content">
+    Skip to main content
+  </a>
+
+  <!-- Scroll progress -->
+  <div
+    class="progress-bar"
+    id="progressBar"
+    aria-hidden="true"
+  ></div>
+
+
+  <!-- =========================================================
+       HEADER
+  ========================================================== -->
 
   <header class="site-header" id="home">
-    <nav class="nav container">
-      <a class="brand" href="#home" aria-label="ANAZORI V16.0 home">
-        <span class="brand-mark">A</span>
-        <span>ANAZORI <b>V16.0</b></span>
+
+    <nav
+      class="nav container"
+      aria-label="Main navigation"
+    >
+
+      <!-- Logo -->
+      <a
+        class="brand"
+        href="#home"
+        aria-label="ANAZORI V16.0 home"
+      >
+
+        <span class="brand-mark" aria-hidden="true">
+          A
+        </span>
+
+        <span class="brand-text">
+          ANAZORI <b>V16.0</b>
+        </span>
+
       </a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+
+
+      <!-- Mobile menu button -->
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+
       </button>
-      <div class="nav-links" id="navLinks">
+
+
+      <!-- Navigation links -->
+      <div
+        class="nav-links"
+        id="navLinks"
+      >
+
         <a href="#about">About</a>
+
         <a href="#topics">Topics</a>
+
         <a href="#guidelines">Guidelines</a>
+
         <a href="#prizes">Prizes</a>
+
         <a href="#venue">Venue</a>
+
         <a href="#contact">Contact</a>
-        <a class="nav-cta" href="#registration">Register</a>
+
+        <a
+          class="nav-cta"
+          href="#registration"
+        >
+          Register
+        </a>
+
       </div>
+
     </nav>
 
+
+    <!-- =======================================================
+         HERO
+    ======================================================== -->
+
     <div class="hero container">
+
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="pulse"></span> ANAZORI FEST • V16.0 • 2026</div>
-        <h1>Ideas that deserve<br><em>to be heard.</em></h1>
+
+        <div class="eyebrow">
+
+          <span
+            class="pulse"
+            aria-hidden="true"
+          ></span>
+
+          ANAZORI FEST
+          <span aria-hidden="true">•</span>
+          V16.0
+          <span aria-hidden="true">•</span>
+          2026
+
+        </div>
+
+
+        <h1>
+          Ideas that deserve
+          <br>
+          <em>to be heard.</em>
+        </h1>
+
+
         <p class="hero-text">
-          A platform for students and young researchers to present meaningful ideas,
-          research, perspectives and innovations at Dibrugarh University.
+          A platform for students and young researchers to
+          present meaningful ideas, research, perspectives
+          and innovations at Dibrugarh University.
         </p>
+
+
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#registration">Register Now <span>↗</span></a>
-          <a class="btn btn-ghost" href="#guidelines">Explore Guidelines <span>↓</span></a>
+
+          <a
+            class="btn btn-primary"
+            href="#registration"
+          >
+            Register Now
+            <span aria-hidden="true">↗</span>
+          </a>
+
+
+          <a
+            class="btn btn-ghost"
+            href="#guidelines"
+          >
+            Explore Guidelines
+            <span aria-hidden="true">↓</span>
+          </a>
+
         </div>
-        <div class="hero-note">Registration closes <strong>4 November 2026</strong></div>
+
+
+        <p class="hero-note">
+          Registration closes
+          <strong>4 November 2026</strong>
+        </p>
+
       </div>
 
-      <div class="hero-visual reveal">
-        <div class="orb orb-one"></div>
-        <div class="orb orb-two"></div>
+
+      <!-- Hero visual -->
+      <div
+        class="hero-visual reveal"
+        aria-hidden="true"
+      >
+
+        <div class="hero-circle"></div>
+
+        <div class="hero-circle hero-circle-small"></div>
+
         <div class="grid-lines"></div>
+
+
         <div class="floating-card card-date">
-          <span class="mini-label">EVENT DATE</span>
+
+          <span class="mini-label">
+            EVENT DATE
+          </span>
+
           <strong>05</strong>
-          <div><b>NOV</b><span>2026</span></div>
+
+          <div>
+            <b>NOV</b>
+            <span>2026</span>
+          </div>
+
         </div>
+
+
         <div class="floating-card card-venue">
-          <span class="mini-label">VENUE</span>
-          <strong>Indira Miri</strong>
-          <span>Dibrugarh University</span>
+
+          <span class="mini-label">
+            VENUE
+          </span>
+
+          <strong>
+            Indira Miri
+          </strong>
+
+          <span>
+            Dibrugarh University
+          </span>
+
         </div>
+
+
         <div class="hero-center">
+
           <span>16</span>
-          <small>ANAZORI</small>
+
+          <small>
+            ANAZORI
+          </small>
+
         </div>
+
       </div>
+
     </div>
 
+
+    <!-- Hero information strip -->
     <div class="hero-strip container">
-      <div><span>REPORTING</span><strong>10:00 AM</strong></div>
-      <div><span>VENUE</span><strong>Indira Miri, D.U.</strong></div>
-      <div><span>PRIZE POOL</span><strong>₹7,000</strong></div>
-      <div><span>REGISTRATION</span><strong>Closes 04 Nov</strong></div>
+
+      <div>
+        <span>REPORTING</span>
+        <strong>10:00 AM</strong>
+      </div>
+
+      <div>
+        <span>VENUE</span>
+        <strong>Indira Miri, D.U.</strong>
+      </div>
+
+      <div>
+        <span>PRIZE POOL</span>
+        <strong>₹7,000</strong>
+      </div>
+
+      <div>
+        <span>REGISTRATION</span>
+        <strong>Closes 04 Nov</strong>
+      </div>
+
     </div>
+
   </header>
 
-  <main>
-    <section class="section about-section" id="about">
+
+  <!-- =========================================================
+       MAIN
+  ========================================================== -->
+
+  <main id="main-content">
+
+
+    <!-- =======================================================
+         ABOUT
+    ======================================================== -->
+
+    <section
+      class="section about-section"
+      id="about"
+    >
+
       <div class="container split">
+
         <div class="section-heading reveal">
-          <span class="section-number">01</span>
-          <p class="kicker">THE EVENT</p>
-          <h2>Where research meets <em>the stage.</em></h2>
+
+          <span class="section-number">
+            01
+          </span>
+
+          <p class="kicker">
+            THE EVENT
+          </p>
+
+          <h2>
+            Where research meets
+            <em>the stage.</em>
+          </h2>
+
         </div>
+
+
         <div class="section-copy reveal">
+
           <p class="lead">
-            ANAZORI V16.0 Paper Presentation is designed as a platform for participants
-            to communicate ideas with clarity, confidence and impact.
+            ANAZORI V16.0 Paper Presentation is designed
+            as a platform for participants to communicate
+            ideas with clarity, confidence and impact.
           </p>
+
           <p>
-            Bring forward a thought-provoking topic, a research idea, an observation,
-            a case study or an innovative perspective. The event encourages meaningful
-            academic exchange and gives presenters an opportunity to sharpen both
-            research and communication skills.
+            Bring forward a thought-provoking topic, a
+            research idea, an observation, a case study
+            or an innovative perspective. The event
+            encourages meaningful academic exchange and
+            gives presenters an opportunity to sharpen
+            both research and communication skills.
           </p>
+
+
           <div class="info-pills">
-            <span>Academic</span><span>Research</span><span>Ideas</span><span>Presentation</span>
+
+            <span>Academic</span>
+            <span>Research</span>
+            <span>Ideas</span>
+            <span>Presentation</span>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="section dark-section" id="topics">
+
+    <!-- =======================================================
+         TOPICS
+    ======================================================== -->
+
+    <section
+      class="section dark-section"
+      id="topics"
+    >
+
       <div class="container">
+
         <div class="section-heading centered reveal">
-          <span class="section-number">02</span>
-          <p class="kicker">PRESENT YOUR IDEA</p>
-          <h2>Topics are <em>coming soon.</em></h2>
-          <p class="heading-sub">The official technical and non-technical topics will be announced soon.</p>
+
+          <span class="section-number">
+            02
+          </span>
+
+          <p class="kicker">
+            PRESENT YOUR IDEA
+          </p>
+
+          <h2>
+            Topics are
+            <em>coming soon.</em>
+          </h2>
+
+          <p class="heading-sub">
+            The official technical and non-technical
+            topics will be announced soon.
+          </p>
+
         </div>
+
+
         <div class="topic-grid">
+
           <article class="topic-card reveal">
-            <span class="topic-icon">01</span>
-            <h3>Technical Topics</h3>
-            <p>Official topics will be published here once finalized by the organizing committee.</p>
-            <span class="status">COMING SOON</span>
+
+            <span class="topic-icon">
+              01
+            </span>
+
+            <h3>
+              Technical Topics
+            </h3>
+
+            <p>
+              Official topics will be published here
+              once finalized by the organizing committee.
+            </p>
+
+            <span class="status">
+              COMING SOON
+            </span>
+
           </article>
+
+
           <article class="topic-card reveal">
-            <span class="topic-icon">02</span>
-            <h3>Non-Technical Topics</h3>
-            <p>Explore the final list of social, cultural, interdisciplinary and contemporary themes here.</p>
-            <span class="status">COMING SOON</span>
+
+            <span class="topic-icon">
+              02
+            </span>
+
+            <h3>
+              Non-Technical Topics
+            </h3>
+
+            <p>
+              Explore the final list of social, cultural,
+              interdisciplinary and contemporary themes
+              here.
+            </p>
+
+            <span class="status">
+              COMING SOON
+            </span>
+
           </article>
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- =======================================================
+         IMPORTANT DATES
+    ======================================================== -->
 
     <section class="section timeline-section">
+
       <div class="container">
+
         <div class="section-heading centered reveal">
-          <span class="section-number">03</span>
-          <p class="kicker">IMPORTANT DATES</p>
-          <h2>Mark your <em>calendar.</em></h2>
+
+          <span class="section-number">
+            03
+          </span>
+
+          <p class="kicker">
+            IMPORTANT DATES
+          </p>
+
+          <h2>
+            Mark your
+            <em>calendar.</em>
+          </h2>
+
         </div>
+
+
         <div class="timeline">
+
           <div class="timeline-item reveal">
-            <div class="timeline-dot">01</div>
-            <div><span>REGISTRATION DEADLINE</span><h3>4 November 2026</h3><p>Registration closes one day before the presentation.</p></div>
+
+            <div
+              class="timeline-dot"
+              aria-hidden="true"
+            >
+              01
+            </div>
+
+            <div class="timeline-content">
+
+              <span>
+                REGISTRATION DEADLINE
+              </span>
+
+              <h3>
+                4 November 2026
+              </h3>
+
+              <p>
+                Registration closes one day before
+                the presentation.
+              </p>
+
+            </div>
+
           </div>
+
+
           <div class="timeline-item active reveal">
-            <div class="timeline-dot">02</div>
-            <div><span>PAPER PRESENTATION</span><h3>5 November 2026</h3><p>Reporting starts at <strong>10:00 AM</strong>.</p></div>
+
+            <div
+              class="timeline-dot"
+              aria-hidden="true"
+            >
+              02
+            </div>
+
+            <div class="timeline-content">
+
+              <span>
+                PAPER PRESENTATION
+              </span>
+
+              <h3>
+                5 November 2026
+              </h3>
+
+              <p>
+                Reporting starts at
+                <strong>10:00 AM</strong>.
+              </p>
+
+            </div>
+
           </div>
+
+
           <div class="timeline-item reveal">
-            <div class="timeline-dot">03</div>
-            <div><span>PAPER SUBMISSION</span><h3>On the day of presentation</h3><p>Final submission requirements will be announced with the official guidelines.</p></div>
+
+            <div
+              class="timeline-dot"
+              aria-hidden="true"
+            >
+              03
+            </div>
+
+            <div class="timeline-content">
+
+              <span>
+                PAPER SUBMISSION
+              </span>
+
+              <h3>
+                On the day of presentation
+              </h3>
+
+              <p>
+                Final submission requirements will be
+                announced with the official guidelines.
+              </p>
+
+            </div>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="section dark-section" id="guidelines">
+
+    <!-- =======================================================
+         GUIDELINES
+    ======================================================== -->
+
+    <section
+      class="section dark-section"
+      id="guidelines"
+    >
+
       <div class="container">
+
         <div class="section-heading reveal">
-          <span class="section-number">04</span>
-          <p class="kicker">RULES & GUIDELINES</p>
-          <h2>Official rules are <em>coming soon.</em></h2>
-          <p class="heading-sub">The complete presentation, eligibility, timing, evaluation and submission rules will appear here after approval.</p>
+
+          <span class="section-number">
+            04
+          </span>
+
+          <p class="kicker">
+            RULES &amp; GUIDELINES
+          </p>
+
+          <h2>
+            Official rules are
+            <em>coming soon.</em>
+          </h2>
+
+          <p class="heading-sub">
+            The complete presentation, eligibility,
+            timing, evaluation and submission rules
+            will appear here after approval.
+          </p>
+
         </div>
+
 
         <div class="coming-grid">
+
           <article class="rule-preview reveal">
-            <span>01</span><h3>Presentation Rules</h3><p>Duration, slide limits, format and presentation structure.</p><b>COMING SOON</b>
+
+            <span>01</span>
+
+            <h3>
+              Presentation Rules
+            </h3>
+
+            <p>
+              Duration, slide limits, format and
+              presentation structure.
+            </p>
+
+            <b>
+              COMING SOON
+            </b>
+
           </article>
+
+
           <article class="rule-preview reveal">
-            <span>02</span><h3>Eligibility</h3><p>Participation criteria, team size and other requirements.</p><b>COMING SOON</b>
+
+            <span>02</span>
+
+            <h3>
+              Eligibility
+            </h3>
+
+            <p>
+              Participation criteria, team size and
+              other requirements.
+            </p>
+
+            <b>
+              COMING SOON
+            </b>
+
           </article>
+
+
           <article class="rule-preview reveal">
-            <span>03</span><h3>Evaluation</h3><p>Judging criteria and scoring parameters.</p><b>COMING SOON</b>
+
+            <span>03</span>
+
+            <h3>
+              Evaluation
+            </h3>
+
+            <p>
+              Judging criteria and scoring parameters.
+            </p>
+
+            <b>
+              COMING SOON
+            </b>
+
           </article>
+
+
           <article class="rule-preview reveal">
-            <span>04</span><h3>Submission</h3><p>Paper format, abstract requirements and final submission process.</p><b>COMING SOON</b>
+
+            <span>04</span>
+
+            <h3>
+              Submission
+            </h3>
+
+            <p>
+              Paper format, abstract requirements and
+              final submission process.
+            </p>
+
+            <b>
+              COMING SOON
+            </b>
+
           </article>
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- =======================================================
+         PAPER SUBMISSION
+    ======================================================== -->
 
     <section class="section submission-section">
+
       <div class="container split">
+
         <div class="section-heading reveal">
-          <span class="section-number">05</span>
-          <p class="kicker">PAPER SUBMISSION</p>
-          <h2>Prepare your paper.<br><em>Details follow.</em></h2>
+
+          <span class="section-number">
+            05
+          </span>
+
+          <p class="kicker">
+            PAPER SUBMISSION
+          </p>
+
+          <h2>
+            Prepare your paper.
+            <br>
+            <em>Details follow.</em>
+          </h2>
+
         </div>
+
+
         <div class="submission-panel reveal">
-          <div class="coming-badge">COMING SOON</div>
-          <p class="lead">Submission guidelines have not been finalized yet.</p>
-          <p>The final page will include paper format, abstract requirements, page limits, referencing style, file/hard-copy requirements and the submission procedure.</p>
-          <div class="submission-meta">
-            <div><span>DEADLINE</span><strong>5 Nov 2026</strong></div>
-            <div><span>FORMAT</span><strong>To be announced</strong></div>
+
+          <div class="coming-badge">
+            COMING SOON
           </div>
+
+          <p class="lead">
+            Submission guidelines have not been
+            finalized yet.
+          </p>
+
+          <p>
+            The final page will include paper format,
+            abstract requirements, page limits,
+            referencing style, file/hard-copy
+            requirements and the submission procedure.
+          </p>
+
+
+          <div class="submission-meta">
+
+            <div>
+
+              <span>
+                DEADLINE
+              </span>
+
+              <strong>
+                5 Nov 2026
+              </strong>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                FORMAT
+              </span>
+
+              <strong>
+                To be announced
+              </strong>
+
+            </div>
+
+          </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="section prize-section" id="prizes">
+
+    <!-- =======================================================
+         PRIZES
+    ======================================================== -->
+
+    <section
+      class="section prize-section"
+      id="prizes"
+    >
+
       <div class="container">
+
         <div class="section-heading centered reveal">
-          <span class="section-number">06</span>
-          <p class="kicker">PRIZES & RECOGNITION</p>
-          <h2>Bring your best.<br><em>Be recognized.</em></h2>
-          <p class="heading-sub">A total prize pool of <strong>₹7,000</strong>, plus recognition for winners.</p>
+
+          <span class="section-number">
+            06
+          </span>
+
+          <p class="kicker">
+            PRIZES &amp; RECOGNITION
+          </p>
+
+          <h2>
+            Bring your best.
+            <br>
+            <em>Be recognized.</em>
+          </h2>
+
+          <p class="heading-sub">
+            A total prize pool of
+            <strong>₹7,000</strong>,
+            plus recognition for winners.
+          </p>
+
         </div>
+
+
         <div class="prize-grid">
-          <article class="prize-card second reveal"><span class="place">02</span><span class="medal">Ⅱ</span><h3>Second Place</h3><strong>₹2,000</strong><p>Prize Money</p></article>
-          <article class="prize-card first reveal"><span class="place">01</span><span class="medal">Ⅰ</span><h3>First Place</h3><strong>₹4,000</strong><p>Prize Money</p></article>
-          <article class="prize-card third reveal"><span class="place">03</span><span class="medal">Ⅲ</span><h3>Third Place</h3><strong>₹1,000</strong><p>Prize Money</p></article>
+
+          <article class="prize-card second reveal">
+
+            <span class="place">
+              02
+            </span>
+
+            <span
+              class="medal"
+              aria-hidden="true"
+            >
+              Ⅱ
+            </span>
+
+            <h3>
+              Second Place
+            </h3>
+
+            <strong>
+              ₹2,000
+            </strong>
+
+            <p>
+              Prize Money
+            </p>
+
+          </article>
+
+
+          <article class="prize-card first reveal">
+
+            <span class="place">
+              01
+            </span>
+
+            <span
+              class="medal"
+              aria-hidden="true"
+            >
+              Ⅰ
+            </span>
+
+            <h3>
+              First Place
+            </h3>
+
+            <strong>
+              ₹4,000
+            </strong>
+
+            <p>
+              Prize Money
+            </p>
+
+          </article>
+
+
+          <article class="prize-card third reveal">
+
+            <span class="place">
+              03
+            </span>
+
+            <span
+              class="medal"
+              aria-hidden="true"
+            >
+              Ⅲ
+            </span>
+
+            <h3>
+              Third Place
+            </h3>
+
+            <strong>
+              ₹1,000
+            </strong>
+
+            <p>
+              Prize Money
+            </p>
+
+          </article>
+
         </div>
+
+
         <div class="recognition reveal">
-          <span>★</span><p>Winner recognition and certificate details will be announced with the official event guidelines.</p>
+
+          <span aria-hidden="true">
+            ★
+          </span>
+
+          <p>
+            Winner recognition and certificate details
+            will be announced with the official event
+            guidelines.
+          </p>
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="section registration-section" id="registration">
+
+    <!-- =======================================================
+         REGISTRATION
+    ======================================================== -->
+
+    <section
+      class="section registration-section"
+      id="registration"
+    >
+
       <div class="container registration-box reveal">
-        <div>
-          <p class="kicker">REGISTRATION</p>
-          <h2>Ready to put your<br><em>idea on stage?</em></h2>
-          <p>The registration form is being prepared. The official link and QR code will be activated here as soon as they are available.</p>
+
+        <div class="registration-copy">
+
+          <p class="kicker">
+            REGISTRATION
+          </p>
+
+          <h2>
+            Ready to put your
+            <br>
+            <em>idea on stage?</em>
+          </h2>
+
+          <p>
+            The registration form is being prepared.
+            The official link and QR code will be
+            activated here as soon as they are available.
+          </p>
+
         </div>
-        <div class="qr-placeholder">
-          <div class="qr-inner"><span>QR</span><small>COMING<br>SOON</small></div>
-          <b>REGISTRATION QR</b>
+
+
+        <div
+          class="qr-placeholder"
+          aria-label="Registration QR code coming soon"
+        >
+
+          <div class="qr-inner">
+
+            <span>
+              QR
+            </span>
+
+            <small>
+              COMING
+              <br>
+              SOON
+            </small>
+
+          </div>
+
+          <b>
+            REGISTRATION QR
+          </b>
+
         </div>
+
+
         <div class="registration-actions">
-          <button class="btn btn-disabled" disabled>Registration Opens Soon</button>
-          <span>Registration deadline: <strong>4 Nov 2026</strong></span>
+
+          <button
+            class="btn btn-disabled"
+            type="button"
+            disabled
+          >
+            Registration Opens Soon
+          </button>
+
+          <span>
+            Registration deadline:
+            <strong>
+              4 Nov 2026
+            </strong>
+          </span>
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- =======================================================
+         WHATSAPP
+    ======================================================== -->
 
     <section class="section whatsapp-section">
+
       <div class="container whatsapp-box reveal">
-        <div class="whatsapp-icon">↗</div>
-        <div>
-          <p class="kicker">HELPDESK</p>
-          <h2>Join the WhatsApp group.</h2>
-          <p>The official group link and QR code will be added here for participant queries and announcements.</p>
+
+        <div
+          class="whatsapp-icon"
+          aria-hidden="true"
+        >
+          ↗
         </div>
-        <div class="qr-small"><span>QR</span><small>SOON</small></div>
-        <button class="btn btn-outline" disabled>WhatsApp Group Coming Soon</button>
+
+
+        <div class="whatsapp-copy">
+
+          <p class="kicker">
+            HELPDESK
+          </p>
+
+          <h2>
+            Join the WhatsApp group.
+          </h2>
+
+          <p>
+            The official group link and QR code will
+            be added here for participant queries
+            and announcements.
+          </p>
+
+        </div>
+
+
+        <div
+          class="qr-small"
+          aria-label="WhatsApp QR code coming soon"
+        >
+
+          <span>
+            QR
+          </span>
+
+          <small>
+            SOON
+          </small>
+
+        </div>
+
+
+        <button
+          class="btn btn-outline"
+          type="button"
+          disabled
+        >
+          WhatsApp Group Coming Soon
+        </button>
+
       </div>
+
     </section>
 
-    <section class="section venue-section" id="venue">
+
+    <!-- =======================================================
+         VENUE
+    ======================================================== -->
+
+    <section
+      class="section venue-section"
+      id="venue"
+    >
+
       <div class="container split venue-split">
+
         <div class="section-heading reveal">
-          <span class="section-number">07</span>
-          <p class="kicker">WHERE & WHEN</p>
-          <h2>See you at<br><em>Indira Miri.</em></h2>
+
+          <span class="section-number">
+            07
+          </span>
+
+          <p class="kicker">
+            WHERE &amp; WHEN
+          </p>
+
+          <h2>
+            See you at
+            <br>
+            <em>Indira Miri.</em>
+          </h2>
+
         </div>
+
+
         <div class="venue-card reveal">
-          <div class="venue-top"><span>05 NOVEMBER 2026</span><span>10:00 AM ONWARDS</span></div>
-          <h3>Indira Miri Conference Hall</h3>
-          <p>Dibrugarh University, Dibrugarh, Assam</p>
-          <div class="map-placeholder">
-            <div class="map-grid"></div>
-            <span>LOCATION</span>
+
+          <div class="venue-top">
+
+            <span>
+              05 NOVEMBER 2026
+            </span>
+
+            <span>
+              10:00 AM ONWARDS
+            </span>
+
           </div>
-          <p class="venue-note">Official map link can be added here when available.</p>
+
+
+          <h3>
+            Indira Miri Conference Hall
+          </h3>
+
+          <p>
+            Dibrugarh University, Dibrugarh, Assam
+          </p>
+
+
+          <div
+            class="map-placeholder"
+            aria-hidden="true"
+          >
+
+            <div class="map-grid"></div>
+
+            <span>
+              LOCATION
+            </span>
+
+          </div>
+
+
+          <p class="venue-note">
+            Official map link can be added here
+            when available.
+          </p>
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="section contact-section" id="contact">
+
+    <!-- =======================================================
+         CONTACT
+    ======================================================== -->
+
+    <section
+      class="section contact-section"
+      id="contact"
+    >
+
       <div class="container">
+
         <div class="section-heading centered reveal">
-          <span class="section-number">08</span>
-          <p class="kicker">CONTACT</p>
-          <h2>Need help? <em>Reach out.</em></h2>
+
+          <span class="section-number">
+            08
+          </span>
+
+          <p class="kicker">
+            CONTACT
+          </p>
+
+          <h2>
+            Need help?
+            <em>Reach out.</em>
+          </h2>
+
         </div>
+
+
         <div class="contact-card reveal">
-          <div class="contact-avatar">BB</div>
+
+          <div
+            class="contact-avatar"
+            aria-hidden="true"
+          >
+            BB
+          </div>
+
+
           <div class="contact-main">
-            <span>EVENT COORDINATOR</span>
-            <h3>Bondita Boruah</h3>
-            <p>Email address and official contact number will be added here.</p>
+
+            <span>
+              EVENT COORDINATOR
+            </span>
+
+            <h3>
+              Bondita Boruah
+            </h3>
+
+            <p>
+              Email address and official contact number
+              will be added here.
+            </p>
+
           </div>
+
+
           <div class="contact-details">
-            <div><span>PHONE</span><strong>To be updated</strong></div>
-            <div><span>EMAIL</span><strong>To be updated</strong></div>
+
+            <div>
+
+              <span>
+                PHONE
+              </span>
+
+              <strong>
+                To be updated
+              </strong>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                EMAIL
+              </span>
+
+              <strong>
+                To be updated
+              </strong>
+
+            </div>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- =======================================================
+         COUNTDOWN
+    ======================================================== -->
 
     <section class="section countdown-section">
+
       <div class="container countdown-wrap">
-        <div class="reveal">
-          <p class="kicker">COUNTDOWN</p>
-          <h2>The stage awaits.</h2>
-          <p>Counting down to 5 November 2026.</p>
+
+        <div class="countdown-copy reveal">
+
+          <p class="kicker">
+            COUNTDOWN
+          </p>
+
+          <h2>
+            The stage awaits.
+          </h2>
+
+          <p>
+            Counting down to 5 November 2026.
+          </p>
+
         </div>
-        <div class="countdown reveal" id="countdown" aria-label="Countdown to event">
-          <div><strong id="days">000</strong><span>DAYS</span></div>
-          <div><strong id="hours">00</strong><span>HOURS</span></div>
-          <div><strong id="minutes">00</strong><span>MINUTES</span></div>
-          <div><strong id="seconds">00</strong><span>SECONDS</span></div>
+
+
+        <div
+          class="countdown reveal"
+          id="countdown"
+          aria-label="Countdown to ANAZORI V16.0"
+        >
+
+          <div>
+
+            <strong id="days">
+              000
+            </strong>
+
+            <span>
+              DAYS
+            </span>
+
+          </div>
+
+
+          <div>
+
+            <strong id="hours">
+              00
+            </strong>
+
+            <span>
+              HOURS
+            </span>
+
+          </div>
+
+
+          <div>
+
+            <strong id="minutes">
+              00
+            </strong>
+
+            <span>
+              MINUTES
+            </span>
+
+          </div>
+
+
+          <div>
+
+            <strong id="seconds">
+              00
+            </strong>
+
+            <span>
+              SECONDS
+            </span>
+
+          </div>
+
         </div>
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
   <footer>
+
     <div class="container footer-main">
+
       <div>
-        <a class="brand footer-brand" href="#home"><span class="brand-mark">A</span><span>ANAZORI <b>V16.0</b></span></a>
-        <p>Paper Presentation • Dibrugarh University</p>
+
+        <a
+          class="brand footer-brand"
+          href="#home"
+          aria-label="ANAZORI V16.0 home"
+        >
+
+          <span
+            class="brand-mark"
+            aria-hidden="true"
+          >
+            A
+          </span>
+
+          <span>
+            ANAZORI <b>V16.0</b>
+          </span>
+
+        </a>
+
+        <p>
+          Paper Presentation • Dibrugarh University
+        </p>
+
       </div>
+
+
       <div class="footer-links">
-        <a href="#home">Home</a><a href="#topics">Topics</a><a href="#guidelines">Guidelines</a><a href="#prizes">Prizes</a><a href="#contact">Contact</a>
+
+        <a href="#home">Home</a>
+
+        <a href="#topics">Topics</a>
+
+        <a href="#guidelines">Guidelines</a>
+
+        <a href="#prizes">Prizes</a>
+
+        <a href="#contact">Contact</a>
+
       </div>
+
     </div>
+
+
     <div class="container footer-bottom">
-      <span>© 2026 ANAZORI V16.0. All rights reserved.</span>
-      <span>Paper Presentation</span>
+
+      <span>
+        © 2026 ANAZORI V16.0. All rights reserved.
+      </span>
+
+      <span>
+        Paper Presentation
+      </span>
+
     </div>
+
   </footer>
 
+
+  <!-- JavaScript -->
   <script src="script.js"></script>
+
 </body>
 </html>
