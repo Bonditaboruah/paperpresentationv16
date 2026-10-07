@@ -1,1396 +1,1019 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-  <meta
-    name="theme-color"
-    content="#f7f7f3"
-  >
+    <meta
+        name="description"
+        content="ANAZORI V16.0 — Paper Presentation Event at Dibrugarh University on 5th November 2026."
+    >
 
-  <meta
-    name="description"
-    content="ANAZORI V16.0 Paper Presentation — Dibrugarh University. 5 November 2026."
-  >
+    <meta
+        name="theme-color"
+        content="#f7f8f6"
+    >
 
-  <meta
-    name="color-scheme"
-    content="light"
-  >
+    <title>ANAZORI V16.0 | Paper Presentation 2026</title>
 
-  <title>ANAZORI V16.0 | Paper Presentation</title>
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
-    rel="stylesheet"
-  >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
 
 <body>
 
-  <!-- Skip navigation for keyboard/screen-reader users -->
-  <a class="skip-link" href="#main-content">
-    Skip to main content
-  </a>
-
-  <!-- Scroll progress -->
-  <div
-    class="progress-bar"
-    id="progressBar"
-    aria-hidden="true"
-  ></div>
-
-
-  <!-- =========================================================
-       HEADER
-  ========================================================== -->
-
-  <header class="site-header" id="home">
-
-    <nav
-      class="nav container"
-      aria-label="Main navigation"
+    <!-- Skip Link -->
+    <a
+        class="skip-link"
+        href="#main-content"
     >
-
-      <!-- Logo -->
-      <a
-        class="brand"
-        href="#home"
-        aria-label="ANAZORI V16.0 home"
-      >
-
-        <span class="brand-mark" aria-hidden="true">
-          A
-        </span>
-
-        <span class="brand-text">
-          ANAZORI <b>V16.0</b>
-        </span>
-
-      </a>
+        Skip to main content
+    </a>
 
 
-      <!-- Mobile menu button -->
-      <button
-        class="menu-toggle"
-        id="menuToggle"
-        type="button"
-        aria-label="Open navigation menu"
-        aria-expanded="false"
-        aria-controls="navLinks"
-      >
+    <!-- =========================
+         HEADER
+    ========================== -->
 
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
+    <header class="site-header">
 
-      </button>
+        <div class="container header-inner">
 
-
-      <!-- Navigation links -->
-      <div
-        class="nav-links"
-        id="navLinks"
-      >
-
-        <a href="#about">About</a>
-
-        <a href="#topics">Topics</a>
-
-        <a href="#guidelines">Guidelines</a>
-
-        <a href="#prizes">Prizes</a>
-
-        <a href="#venue">Venue</a>
-
-        <a href="#contact">Contact</a>
-
-        <a
-          class="nav-cta"
-          href="#registration"
-        >
-          Register
-        </a>
-
-      </div>
-
-    </nav>
+            <a
+                href="#home"
+                class="brand"
+                aria-label="ANAZORI V16.0 Home"
+            >
+                <span class="brand-name">ANAZORI</span>
+                <span class="brand-edition">V16.0</span>
+            </a>
 
 
-    <!-- =======================================================
-         HERO
-    ======================================================== -->
+            <!-- Desktop Navigation -->
 
-    <div class="hero container">
+            <nav
+                class="desktop-nav"
+                aria-label="Main navigation"
+            >
 
-      <div class="hero-copy reveal">
+                <a href="#home">Home</a>
 
-        <div class="eyebrow">
+                <a href="#topics">Topics</a>
 
-          <span
-            class="pulse"
-            aria-hidden="true"
-          ></span>
+                <a href="#rules">Rules</a>
 
-          ANAZORI FEST
-          <span aria-hidden="true">•</span>
-          V16.0
-          <span aria-hidden="true">•</span>
-          2026
+                <a href="#submission">Submission Guidelines</a>
+
+                <a href="#prizes">Prizes</a>
+
+                <a href="#contact">Contact</a>
+
+                <a
+                    href="#registration"
+                    class="nav-register"
+                >
+                    Register Now
+                </a>
+
+            </nav>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobileMenu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
         </div>
 
-
-        <h1>
-          Ideas that deserve
-          <br>
-          <em>to be heard.</em>
-        </h1>
+    </header>
 
 
-        <p class="hero-text">
-          A platform for students and young researchers to
-          present meaningful ideas, research, perspectives
-          and innovations at Dibrugarh University.
-        </p>
+    <!-- =========================
+         MOBILE NAVIGATION
+    ========================== -->
 
-
-        <div class="hero-actions">
-
-          <a
-            class="btn btn-primary"
-            href="#registration"
-          >
-            Register Now
-            <span aria-hidden="true">↗</span>
-          </a>
-
-
-          <a
-            class="btn btn-ghost"
-            href="#guidelines"
-          >
-            Explore Guidelines
-            <span aria-hidden="true">↓</span>
-          </a>
-
-        </div>
-
-
-        <p class="hero-note">
-          Registration closes
-          <strong>4 November 2026</strong>
-        </p>
-
-      </div>
-
-
-      <!-- Hero visual -->
-      <div
-        class="hero-visual reveal"
+    <div
+        class="mobile-overlay"
+        id="mobileOverlay"
         aria-hidden="true"
-      >
-
-        <div class="hero-circle"></div>
-
-        <div class="hero-circle hero-circle-small"></div>
-
-        <div class="grid-lines"></div>
+    ></div>
 
 
-        <div class="floating-card card-date">
-
-          <span class="mini-label">
-            EVENT DATE
-          </span>
-
-          <strong>05</strong>
-
-          <div>
-            <b>NOV</b>
-            <span>2026</span>
-          </div>
-
-        </div>
-
-
-        <div class="floating-card card-venue">
-
-          <span class="mini-label">
-            VENUE
-          </span>
-
-          <strong>
-            Indira Miri
-          </strong>
-
-          <span>
-            Dibrugarh University
-          </span>
-
-        </div>
-
-
-        <div class="hero-center">
-
-          <span>16</span>
-
-          <small>
-            ANAZORI
-          </small>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- Hero information strip -->
-    <div class="hero-strip container">
-
-      <div>
-        <span>REPORTING</span>
-        <strong>10:00 AM</strong>
-      </div>
-
-      <div>
-        <span>VENUE</span>
-        <strong>Indira Miri, D.U.</strong>
-      </div>
-
-      <div>
-        <span>PRIZE POOL</span>
-        <strong>₹7,000</strong>
-      </div>
-
-      <div>
-        <span>REGISTRATION</span>
-        <strong>Closes 04 Nov</strong>
-      </div>
-
-    </div>
-
-  </header>
-
-
-  <!-- =========================================================
-       MAIN
-  ========================================================== -->
-
-  <main id="main-content">
-
-
-    <!-- =======================================================
-         ABOUT
-    ======================================================== -->
-
-    <section
-      class="section about-section"
-      id="about"
+    <aside
+        class="mobile-menu"
+        id="mobileMenu"
+        aria-label="Mobile navigation"
+        aria-hidden="true"
     >
 
-      <div class="container split">
+        <div class="mobile-menu-header">
 
-        <div class="section-heading reveal">
-
-          <span class="section-number">
-            01
-          </span>
-
-          <p class="kicker">
-            THE EVENT
-          </p>
-
-          <h2>
-            Where research meets
-            <em>the stage.</em>
-          </h2>
-
-        </div>
-
-
-        <div class="section-copy reveal">
-
-          <p class="lead">
-            ANAZORI V16.0 Paper Presentation is designed
-            as a platform for participants to communicate
-            ideas with clarity, confidence and impact.
-          </p>
-
-          <p>
-            Bring forward a thought-provoking topic, a
-            research idea, an observation, a case study
-            or an innovative perspective. The event
-            encourages meaningful academic exchange and
-            gives presenters an opportunity to sharpen
-            both research and communication skills.
-          </p>
-
-
-          <div class="info-pills">
-
-            <span>Academic</span>
-            <span>Research</span>
-            <span>Ideas</span>
-            <span>Presentation</span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =======================================================
-         TOPICS
-    ======================================================== -->
-
-    <section
-      class="section dark-section"
-      id="topics"
-    >
-
-      <div class="container">
-
-        <div class="section-heading centered reveal">
-
-          <span class="section-number">
-            02
-          </span>
-
-          <p class="kicker">
-            PRESENT YOUR IDEA
-          </p>
-
-          <h2>
-            Topics are
-            <em>coming soon.</em>
-          </h2>
-
-          <p class="heading-sub">
-            The official technical and non-technical
-            topics will be announced soon.
-          </p>
-
-        </div>
-
-
-        <div class="topic-grid">
-
-          <article class="topic-card reveal">
-
-            <span class="topic-icon">
-              01
-            </span>
-
-            <h3>
-              Technical Topics
-            </h3>
-
-            <p>
-              Official topics will be published here
-              once finalized by the organizing committee.
-            </p>
-
-            <span class="status">
-              COMING SOON
-            </span>
-
-          </article>
-
-
-          <article class="topic-card reveal">
-
-            <span class="topic-icon">
-              02
-            </span>
-
-            <h3>
-              Non-Technical Topics
-            </h3>
-
-            <p>
-              Explore the final list of social, cultural,
-              interdisciplinary and contemporary themes
-              here.
-            </p>
-
-            <span class="status">
-              COMING SOON
-            </span>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =======================================================
-         IMPORTANT DATES
-    ======================================================== -->
-
-    <section class="section timeline-section">
-
-      <div class="container">
-
-        <div class="section-heading centered reveal">
-
-          <span class="section-number">
-            03
-          </span>
-
-          <p class="kicker">
-            IMPORTANT DATES
-          </p>
-
-          <h2>
-            Mark your
-            <em>calendar.</em>
-          </h2>
-
-        </div>
-
-
-        <div class="timeline">
-
-          <div class="timeline-item reveal">
-
-            <div
-              class="timeline-dot"
-              aria-hidden="true"
+            <a
+                href="#home"
+                class="brand mobile-brand"
             >
-              01
-            </div>
+                <span class="brand-name">ANAZORI</span>
+                <span class="brand-edition">V16.0</span>
+            </a>
 
-            <div class="timeline-content">
-
-              <span>
-                REGISTRATION DEADLINE
-              </span>
-
-              <h3>
-                4 November 2026
-              </h3>
-
-              <p>
-                Registration closes one day before
-                the presentation.
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <div class="timeline-item active reveal">
-
-            <div
-              class="timeline-dot"
-              aria-hidden="true"
+            <button
+                class="menu-close"
+                id="menuClose"
+                type="button"
+                aria-label="Close navigation menu"
             >
-              02
-            </div>
+                &times;
+            </button>
 
-            <div class="timeline-content">
-
-              <span>
-                PAPER PRESENTATION
-              </span>
-
-              <h3>
-                5 November 2026
-              </h3>
-
-              <p>
-                Reporting starts at
-                <strong>10:00 AM</strong>.
-              </p>
-
-            </div>
-
-          </div>
+        </div>
 
 
-          <div class="timeline-item reveal">
+        <nav class="mobile-nav">
 
-            <div
-              class="timeline-dot"
-              aria-hidden="true"
+            <a href="#home">Home</a>
+
+            <a href="#topics">Topics</a>
+
+            <a href="#rules">Rules</a>
+
+            <a href="#submission">
+                Submission Guidelines
+            </a>
+
+            <a href="#prizes">Prizes</a>
+
+            <a href="#contact">Contact</a>
+
+            <a
+                href="#registration"
+                class="mobile-register"
             >
-              03
+                Register Now
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main id="main-content">
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section
+            class="hero section"
+            id="home"
+        >
+
+            <div class="container">
+
+                <div class="hero-grid">
+
+                    <div class="hero-content">
+
+                        <p class="eyebrow">
+                            Paper Presentation · 2026
+                        </p>
+
+                        <h1>
+                            Welcome to
+                            <span>ANAZORI V16.0</span>
+                        </h1>
+
+                        <p class="hero-description">
+                            If you believe your research is extraordinary
+                            and can bridge existing gaps in the field,
+                            the Centre for Computer Science and Applications
+                            (CCSA) at Dibrugarh University invites you to
+                            showcase your work at ANAZORI's Paper Presentation.
+                        </p>
+
+                        <p class="hero-description">
+                            This event is a platform to demonstrate your
+                            research skills, public speaking abilities and
+                            confidence. Don't miss the chance to make your
+                            mark in the academic world!
+                        </p>
+
+
+                        <div class="hero-actions">
+
+                            <a
+                                href="#registration"
+                                class="button button-primary"
+                            >
+                                Registration Details
+                            </a>
+
+                            <a
+                                href="#event-details"
+                                class="button button-secondary"
+                            >
+                                View Event Details
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Event Summary Card -->
+
+                    <div
+                        class="hero-card"
+                        id="event-details"
+                    >
+
+                        <div class="hero-card-top">
+
+                            <span class="status-dot"></span>
+
+                            <span>
+                                ANAZORI V16.0
+                            </span>
+
+                        </div>
+
+
+                        <div class="event-main-date">
+
+                            <span class="date-day">
+                                05
+                            </span>
+
+                            <div>
+                                <span class="date-month">
+                                    NOVEMBER
+                                </span>
+
+                                <span class="date-year">
+                                    2026
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="event-info-list">
+
+                            <div class="event-info-item">
+
+                                <span class="event-label">
+                                    Reporting Time
+                                </span>
+
+                                <strong>
+                                    10:00 AM
+                                </strong>
+
+                            </div>
+
+
+                            <div class="event-info-item">
+
+                                <span class="event-label">
+                                    Venue
+                                </span>
+
+                                <strong>
+                                    Indira Miri Conference Hall,
+                                    Dibrugarh University
+                                </strong>
+
+                            </div>
+
+
+                            <div class="event-info-item">
+
+                                <span class="event-label">
+                                    Registration Deadline
+                                </span>
+
+                                <strong>
+                                    4th November 2026
+                                </strong>
+
+                            </div>
+
+
+                            <div class="event-info-item">
+
+                                <span class="event-label">
+                                    Paper / Abstract Submission
+                                </span>
+
+                                <strong>
+                                    On the day of presentation
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="timeline-content">
+        </section>
 
-              <span>
-                PAPER SUBMISSION
-              </span>
 
-              <h3>
-                On the day of presentation
-              </h3>
+        <!-- =========================
+             REGISTRATION
+        ========================== -->
 
-              <p>
-                Final submission requirements will be
-                announced with the official guidelines.
-              </p>
+        <section
+            class="registration section section-soft"
+            id="registration"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        Registration
+                    </p>
+
+                    <h2>
+                        Ready to Present Your Idea?
+                    </h2>
+
+                    <p>
+                        Registration details for ANAZORI V16.0
+                        will be available soon.
+                    </p>
+
+                </div>
+
+
+                <div class="registration-grid">
+
+                    <div class="registration-card">
+
+                        <div class="card-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Registration
+                        </h3>
+
+                        <p>
+                            Registration will open soon.
+                            The official Google Form will be
+                            added here once it is created.
+                        </p>
+
+                        <span class="coming-soon">
+                            Coming Soon
+                        </span>
+
+                    </div>
+
+
+                    <div class="registration-card">
+
+                        <div class="card-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Registration Deadline
+                        </h3>
+
+                        <p>
+                            Complete your registration before
+                            the deadline.
+                        </p>
+
+                        <strong class="deadline">
+                            4th November 2026
+                        </strong>
+
+                    </div>
+
+
+                    <div class="registration-card">
+
+                        <div class="card-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Registration QR
+                        </h3>
+
+                        <p>
+                            The registration QR code will be
+                            added once registration is available.
+                        </p>
+
+                        <span class="coming-soon">
+                            QR Coming Soon
+                        </span>
+
+                    </div>
+
+                </div>
 
             </div>
 
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
+        </section>
 
 
-    <!-- =======================================================
-         GUIDELINES
-    ======================================================== -->
+        <!-- =========================
+             TOPICS
+        ========================== -->
 
-    <section
-      class="section dark-section"
-      id="guidelines"
-    >
+        <section
+            class="section"
+            id="topics"
+        >
 
-      <div class="container">
+            <div class="container">
 
-        <div class="section-heading reveal">
+                <div class="section-heading">
 
-          <span class="section-number">
-            04
-          </span>
+                    <p class="eyebrow">
+                        Paper Presentation
+                    </p>
 
-          <p class="kicker">
-            RULES &amp; GUIDELINES
-          </p>
+                    <h2>
+                        V16.0 Topics
+                    </h2>
 
-          <h2>
-            Official rules are
-            <em>coming soon.</em>
-          </h2>
+                    <p>
+                        The official topics for ANAZORI V16.0
+                        have not been decided yet.
+                    </p>
 
-          <p class="heading-sub">
-            The complete presentation, eligibility,
-            timing, evaluation and submission rules
-            will appear here after approval.
-          </p>
-
-        </div>
+                </div>
 
 
-        <div class="coming-grid">
+                <div class="announcement-card">
 
-          <article class="rule-preview reveal">
+                    <div class="announcement-icon">
+                        —
+                    </div>
 
-            <span>01</span>
+                    <div>
 
-            <h3>
-              Presentation Rules
-            </h3>
+                        <span class="announcement-label">
+                            To Be Announced
+                        </span>
 
-            <p>
-              Duration, slide limits, format and
-              presentation structure.
-            </p>
+                        <h3>
+                            Topics will be announced soon.
+                        </h3>
 
-            <b>
-              COMING SOON
-            </b>
+                        <p>
+                            Please check this section again once
+                            the official V16.0 topics are finalized.
+                        </p>
 
-          </article>
+                    </div>
 
+                </div>
 
-          <article class="rule-preview reveal">
+            </div>
 
-            <span>02</span>
-
-            <h3>
-              Eligibility
-            </h3>
-
-            <p>
-              Participation criteria, team size and
-              other requirements.
-            </p>
-
-            <b>
-              COMING SOON
-            </b>
-
-          </article>
+        </section>
 
 
-          <article class="rule-preview reveal">
+        <!-- =========================
+             RULES
+        ========================== -->
 
-            <span>03</span>
+        <section
+            class="section section-soft"
+            id="rules"
+        >
 
-            <h3>
-              Evaluation
-            </h3>
+            <div class="container">
 
-            <p>
-              Judging criteria and scoring parameters.
-            </p>
+                <div class="section-heading">
 
-            <b>
-              COMING SOON
-            </b>
+                    <p class="eyebrow">
+                        Guidelines
+                    </p>
 
-          </article>
+                    <h2>
+                        Rules & Guidelines
+                    </h2>
 
+                    <p>
+                        The rules and presentation guidelines for
+                        V16.0 are currently being finalized.
+                    </p>
 
-          <article class="rule-preview reveal">
-
-            <span>04</span>
-
-            <h3>
-              Submission
-            </h3>
-
-            <p>
-              Paper format, abstract requirements and
-              final submission process.
-            </p>
-
-            <b>
-              COMING SOON
-            </b>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
+                </div>
 
 
-    <!-- =======================================================
-         PAPER SUBMISSION
-    ======================================================== -->
+                <div class="placeholder-grid">
 
-    <section class="section submission-section">
+                    <article class="placeholder-card">
 
-      <div class="container split">
+                        <span class="placeholder-number">
+                            01
+                        </span>
 
-        <div class="section-heading reveal">
+                        <h3>
+                            Presentation Rules
+                        </h3>
 
-          <span class="section-number">
-            05
-          </span>
+                        <p>
+                            Official presentation rules will
+                            be announced soon.
+                        </p>
 
-          <p class="kicker">
-            PAPER SUBMISSION
-          </p>
+                        <span class="coming-soon">
+                            To Be Announced
+                        </span>
 
-          <h2>
-            Prepare your paper.
-            <br>
-            <em>Details follow.</em>
-          </h2>
-
-        </div>
+                    </article>
 
 
-        <div class="submission-panel reveal">
+                    <article class="placeholder-card">
 
-          <div class="coming-badge">
-            COMING SOON
-          </div>
+                        <span class="placeholder-number">
+                            02
+                        </span>
 
-          <p class="lead">
-            Submission guidelines have not been
-            finalized yet.
-          </p>
+                        <h3>
+                            Evaluation Criteria
+                        </h3>
 
-          <p>
-            The final page will include paper format,
-            abstract requirements, page limits,
-            referencing style, file/hard-copy
-            requirements and the submission procedure.
-          </p>
+                        <p>
+                            Details regarding evaluation and
+                            judging will be announced soon.
+                        </p>
+
+                        <span class="coming-soon">
+                            To Be Announced
+                        </span>
+
+                    </article>
 
 
-          <div class="submission-meta">
+                    <article class="placeholder-card">
+
+                        <span class="placeholder-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Presentation Format
+                        </h3>
+
+                        <p>
+                            The official presentation format
+                            will be published later.
+                        </p>
+
+                        <span class="coming-soon">
+                            To Be Announced
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SUBMISSION
+        ========================== -->
+
+        <section
+            class="section"
+            id="submission"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        Submission
+                    </p>
+
+                    <h2>
+                        Paper & Abstract Submission
+                    </h2>
+
+                    <p>
+                        The detailed submission guidelines for
+                        ANAZORI V16.0 are yet to be finalized.
+                    </p>
+
+                </div>
+
+
+                <div class="submission-highlight">
+
+                    <div>
+
+                        <span class="announcement-label">
+                            Current Information
+                        </span>
+
+                        <h3>
+                            Submission is on the day of presentation.
+                        </h3>
+
+                        <p>
+                            Participants will submit their paper or
+                            abstract on the day of the presentation.
+                            Further formatting and submission
+                            requirements will be announced later.
+                        </p>
+
+                    </div>
+
+
+                    <div class="submission-date">
+
+                        <span>
+                            Submission
+                        </span>
+
+                        <strong>
+                            5 Nov
+                        </strong>
+
+                        <small>
+                            2026
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="notice-box">
+
+                    <strong>
+                        Detailed guidelines
+                    </strong>
+
+                    <span>
+                        To Be Announced
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PRIZES
+        ========================== -->
+
+        <section
+            class="section section-soft"
+            id="prizes"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        Recognition
+                    </p>
+
+                    <h2>
+                        Prizes
+                    </h2>
+
+                    <p>
+                        Showcase your research and compete for
+                        a total prize pool of ₹7,000/-.
+                    </p>
+
+                </div>
+
+
+                <div class="prize-total">
+
+                    <span>
+                        Total Prize Pool
+                    </span>
+
+                    <strong>
+                        ₹7,000/-
+                    </strong>
+
+                </div>
+
+
+                <div class="prize-grid">
+
+                    <article class="prize-card">
+
+                        <span class="prize-rank">
+                            01
+                        </span>
+
+                        <span class="prize-place">
+                            First Prize
+                        </span>
+
+                        <strong>
+                            ₹4,000/-
+                        </strong>
+
+                    </article>
+
+
+                    <article class="prize-card">
+
+                        <span class="prize-rank">
+                            02
+                        </span>
+
+                        <span class="prize-place">
+                            Second Prize
+                        </span>
+
+                        <strong>
+                            ₹2,000/-
+                        </strong>
+
+                    </article>
+
+
+                    <article class="prize-card">
+
+                        <span class="prize-rank">
+                            03
+                        </span>
+
+                        <span class="prize-place">
+                            Third Prize
+                        </span>
+
+                        <strong>
+                            ₹1,000/-
+                        </strong>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             WHATSAPP / COMMUNITY
+        ========================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="community-card">
+
+                    <div class="community-content">
+
+                        <p class="eyebrow">
+                            Stay Connected
+                        </p>
+
+                        <h2>
+                            Join the ANAZORI Community
+                        </h2>
+
+                        <p>
+                            The official WhatsApp group link and
+                            QR code will be added once they are created.
+                        </p>
+
+                        <span class="coming-soon">
+                            WhatsApp Group Coming Soon
+                        </span>
+
+                    </div>
+
+
+                    <div class="qr-placeholder">
+
+                        <span>
+                            QR
+                        </span>
+
+                        <small>
+                            Coming Soon
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section
+            class="section section-soft"
+            id="contact"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        Contact
+                    </p>
+
+                    <h2>
+                        Get in Touch
+                    </h2>
+
+                    <p>
+                        For event-related queries, contact the
+                        event coordinator.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+                    <article class="contact-card">
+
+                        <div class="contact-icon">
+                            B
+                        </div>
+
+                        <div>
+
+                            <span class="contact-role">
+                                Event Coordinator
+                            </span>
+
+                            <h3>
+                                Bondita Boruah
+                            </h3>
+
+                            <a
+                                href="tel:0000000000"
+                                class="contact-link"
+                            >
+                                +91 0000000000
+                            </a>
+
+                            <span class="contact-email">
+                                Email — To Be Added
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="contact-card contact-coming">
+
+                        <div class="contact-icon">
+                            @
+                        </div>
+
+                        <div>
+
+                            <span class="contact-role">
+                                Email
+                            </span>
+
+                            <h3>
+                                Contact Email
+                            </h3>
+
+                            <span class="contact-email">
+                                Email address will be added later.
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-inner">
 
             <div>
 
-              <span>
-                DEADLINE
-              </span>
+                <a
+                    href="#home"
+                    class="footer-brand"
+                >
+                    ANAZORI V16.0
+                </a>
 
-              <strong>
-                5 Nov 2026
-              </strong>
-
-            </div>
-
-
-            <div>
-
-              <span>
-                FORMAT
-              </span>
-
-              <strong>
-                To be announced
-              </strong>
+                <p>
+                    Paper Presentation · Dibrugarh University
+                </p>
 
             </div>
 
-          </div>
 
-        </div>
+            <div class="footer-date">
 
-      </div>
+                <span>
+                    5th November 2026
+                </span>
 
-    </section>
-
-
-    <!-- =======================================================
-         PRIZES
-    ======================================================== -->
-
-    <section
-      class="section prize-section"
-      id="prizes"
-    >
-
-      <div class="container">
-
-        <div class="section-heading centered reveal">
-
-          <span class="section-number">
-            06
-          </span>
-
-          <p class="kicker">
-            PRIZES &amp; RECOGNITION
-          </p>
-
-          <h2>
-            Bring your best.
-            <br>
-            <em>Be recognized.</em>
-          </h2>
-
-          <p class="heading-sub">
-            A total prize pool of
-            <strong>₹7,000</strong>,
-            plus recognition for winners.
-          </p>
-
-        </div>
-
-
-        <div class="prize-grid">
-
-          <article class="prize-card second reveal">
-
-            <span class="place">
-              02
-            </span>
-
-            <span
-              class="medal"
-              aria-hidden="true"
-            >
-              Ⅱ
-            </span>
-
-            <h3>
-              Second Place
-            </h3>
-
-            <strong>
-              ₹2,000
-            </strong>
-
-            <p>
-              Prize Money
-            </p>
-
-          </article>
-
-
-          <article class="prize-card first reveal">
-
-            <span class="place">
-              01
-            </span>
-
-            <span
-              class="medal"
-              aria-hidden="true"
-            >
-              Ⅰ
-            </span>
-
-            <h3>
-              First Place
-            </h3>
-
-            <strong>
-              ₹4,000
-            </strong>
-
-            <p>
-              Prize Money
-            </p>
-
-          </article>
-
-
-          <article class="prize-card third reveal">
-
-            <span class="place">
-              03
-            </span>
-
-            <span
-              class="medal"
-              aria-hidden="true"
-            >
-              Ⅲ
-            </span>
-
-            <h3>
-              Third Place
-            </h3>
-
-            <strong>
-              ₹1,000
-            </strong>
-
-            <p>
-              Prize Money
-            </p>
-
-          </article>
-
-        </div>
-
-
-        <div class="recognition reveal">
-
-          <span aria-hidden="true">
-            ★
-          </span>
-
-          <p>
-            Winner recognition and certificate details
-            will be announced with the official event
-            guidelines.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =======================================================
-         REGISTRATION
-    ======================================================== -->
-
-    <section
-      class="section registration-section"
-      id="registration"
-    >
-
-      <div class="container registration-box reveal">
-
-        <div class="registration-copy">
-
-          <p class="kicker">
-            REGISTRATION
-          </p>
-
-          <h2>
-            Ready to put your
-            <br>
-            <em>idea on stage?</em>
-          </h2>
-
-          <p>
-            The registration form is being prepared.
-            The official link and QR code will be
-            activated here as soon as they are available.
-          </p>
-
-        </div>
-
-
-        <div
-          class="qr-placeholder"
-          aria-label="Registration QR code coming soon"
-        >
-
-          <div class="qr-inner">
-
-            <span>
-              QR
-            </span>
-
-            <small>
-              COMING
-              <br>
-              SOON
-            </small>
-
-          </div>
-
-          <b>
-            REGISTRATION QR
-          </b>
-
-        </div>
-
-
-        <div class="registration-actions">
-
-          <button
-            class="btn btn-disabled"
-            type="button"
-            disabled
-          >
-            Registration Opens Soon
-          </button>
-
-          <span>
-            Registration deadline:
-            <strong>
-              4 Nov 2026
-            </strong>
-          </span>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =======================================================
-         WHATSAPP
-    ======================================================== -->
-
-    <section class="section whatsapp-section">
-
-      <div class="container whatsapp-box reveal">
-
-        <div
-          class="whatsapp-icon"
-          aria-hidden="true"
-        >
-          ↗
-        </div>
-
-
-        <div class="whatsapp-copy">
-
-          <p class="kicker">
-            HELPDESK
-          </p>
-
-          <h2>
-            Join the WhatsApp group.
-          </h2>
-
-          <p>
-            The official group link and QR code will
-            be added here for participant queries
-            and announcements.
-          </p>
-
-        </div>
-
-
-        <div
-          class="qr-small"
-          aria-label="WhatsApp QR code coming soon"
-        >
-
-          <span>
-            QR
-          </span>
-
-          <small>
-            SOON
-          </small>
-
-        </div>
-
-
-        <button
-          class="btn btn-outline"
-          type="button"
-          disabled
-        >
-          WhatsApp Group Coming Soon
-        </button>
-
-      </div>
-
-    </section>
-
-
-    <!-- =======================================================
-         VENUE
-    ======================================================== -->
-
-    <section
-      class="section venue-section"
-      id="venue"
-    >
-
-      <div class="container split venue-split">
-
-        <div class="section-heading reveal">
-
-          <span class="section-number">
-            07
-          </span>
-
-          <p class="kicker">
-            WHERE &amp; WHEN
-          </p>
-
-          <h2>
-            See you at
-            <br>
-            <em>Indira Miri.</em>
-          </h2>
-
-        </div>
-
-
-        <div class="venue-card reveal">
-
-          <div class="venue-top">
-
-            <span>
-              05 NOVEMBER 2026
-            </span>
-
-            <span>
-              10:00 AM ONWARDS
-            </span>
-
-          </div>
-
-
-          <h3>
-            Indira Miri Conference Hall
-          </h3>
-
-          <p>
-            Dibrugarh University, Dibrugarh, Assam
-          </p>
-
-
-          <div
-            class="map-placeholder"
-            aria-hidden="true"
-          >
-
-            <div class="map-grid"></div>
-
-            <span>
-              LOCATION
-            </span>
-
-          </div>
-
-
-          <p class="venue-note">
-            Official map link can be added here
-            when available.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =======================================================
-         CONTACT
-    ======================================================== -->
-
-    <section
-      class="section contact-section"
-      id="contact"
-    >
-
-      <div class="container">
-
-        <div class="section-heading centered reveal">
-
-          <span class="section-number">
-            08
-          </span>
-
-          <p class="kicker">
-            CONTACT
-          </p>
-
-          <h2>
-            Need help?
-            <em>Reach out.</em>
-          </h2>
-
-        </div>
-
-
-        <div class="contact-card reveal">
-
-          <div
-            class="contact-avatar"
-            aria-hidden="true"
-          >
-            BB
-          </div>
-
-
-          <div class="contact-main">
-
-            <span>
-              EVENT COORDINATOR
-            </span>
-
-            <h3>
-              Bondita Boruah
-            </h3>
-
-            <p>
-              Email address and official contact number
-              will be added here.
-            </p>
-
-          </div>
-
-
-          <div class="contact-details">
-
-            <div>
-
-              <span>
-                PHONE
-              </span>
-
-              <strong>
-                To be updated
-              </strong>
+                <span>
+                    Indira Miri Conference Hall
+                </span>
 
             </div>
 
-
-            <div>
-
-              <span>
-                EMAIL
-              </span>
-
-              <strong>
-                To be updated
-              </strong>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =======================================================
-         COUNTDOWN
-    ======================================================== -->
-
-    <section class="section countdown-section">
-
-      <div class="container countdown-wrap">
-
-        <div class="countdown-copy reveal">
-
-          <p class="kicker">
-            COUNTDOWN
-          </p>
-
-          <h2>
-            The stage awaits.
-          </h2>
-
-          <p>
-            Counting down to 5 November 2026.
-          </p>
-
         </div>
 
 
-        <div
-          class="countdown reveal"
-          id="countdown"
-          aria-label="Countdown to ANAZORI V16.0"
-        >
+        <div class="container footer-bottom">
 
-          <div>
+            <p>
+                © 2026 ANAZORI V16.0. All rights reserved.
+            </p>
 
-            <strong id="days">
-              000
-            </strong>
-
-            <span>
-              DAYS
-            </span>
-
-          </div>
-
-
-          <div>
-
-            <strong id="hours">
-              00
-            </strong>
-
-            <span>
-              HOURS
-            </span>
-
-          </div>
-
-
-          <div>
-
-            <strong id="minutes">
-              00
-            </strong>
-
-            <span>
-              MINUTES
-            </span>
-
-          </div>
-
-
-          <div>
-
-            <strong id="seconds">
-              00
-            </strong>
-
-            <span>
-              SECONDS
-            </span>
-
-          </div>
+            <a href="#home">
+                Back to top ↑
+            </a>
 
         </div>
 
-      </div>
-
-    </section>
-
-  </main>
+    </footer>
 
 
-  <!-- =========================================================
-       FOOTER
-  ========================================================== -->
-
-  <footer>
-
-    <div class="container footer-main">
-
-      <div>
-
-        <a
-          class="brand footer-brand"
-          href="#home"
-          aria-label="ANAZORI V16.0 home"
-        >
-
-          <span
-            class="brand-mark"
-            aria-hidden="true"
-          >
-            A
-          </span>
-
-          <span>
-            ANAZORI <b>V16.0</b>
-          </span>
-
-        </a>
-
-        <p>
-          Paper Presentation • Dibrugarh University
-        </p>
-
-      </div>
-
-
-      <div class="footer-links">
-
-        <a href="#home">Home</a>
-
-        <a href="#topics">Topics</a>
-
-        <a href="#guidelines">Guidelines</a>
-
-        <a href="#prizes">Prizes</a>
-
-        <a href="#contact">Contact</a>
-
-      </div>
-
-    </div>
-
-
-    <div class="container footer-bottom">
-
-      <span>
-        © 2026 ANAZORI V16.0. All rights reserved.
-      </span>
-
-      <span>
-        Paper Presentation
-      </span>
-
-    </div>
-
-  </footer>
-
-
-  <!-- JavaScript -->
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
