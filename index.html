@@ -1,1019 +1,399 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="ANAZORI V16.0 — Paper Presentation Event at Dibrugarh University on 5th November 2026."
-    >
-
-    <meta
-        name="theme-color"
-        content="#f7f8f6"
-    >
-
-    <title>ANAZORI V16.0 | Paper Presentation 2026</title>
-
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
-
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anazori 2025 - Paper Presentation Competition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Using Inter as the default font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* A slightly off-white for a softer look */
+        }
+        /* Custom highlight color */
+        .highlight-blue {
+            color: #2563eb;
+        }
+        .bg-highlight-blue {
+            background-color: #2563eb;
+        }
+        .border-highlight-blue {
+            border-color: #2563eb;
+        }
+        /* Card styles for a consistent look */
+        .info-card {
+            background-color: white;
+            border-radius: 0.75rem; /* rounded-xl */
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+    </style>
 </head>
+<body class="text-gray-800">
 
-<body>
+    <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center relative">
+        
+        <div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+            <a href="#home" class="hidden md:block text-2xl font-bold text-gray-800">ANA<span class="highlight-blue">ZORI 15.O</span></a>
+        </div>
+        
+        <a href="#home" class="md:hidden absolute left-1/2 -translate-x-1/2 text-2xl font-bold text-gray-800">
+            ANA<span class="highlight-blue">ZORI 15.O</span>
+        </a>
 
-    <!-- Skip Link -->
-    <a
-        class="skip-link"
-        href="#main-content"
-    >
-        Skip to main content
-    </a>
-
-
-    <!-- =========================
-         HEADER
-    ========================== -->
-
-    <header class="site-header">
-
-        <div class="container header-inner">
-
-            <a
-                href="#home"
-                class="brand"
-                aria-label="ANAZORI V16.0 Home"
-            >
-                <span class="brand-name">ANAZORI</span>
-                <span class="brand-edition">V16.0</span>
-            </a>
-
-
-            <!-- Desktop Navigation -->
-
-            <nav
-                class="desktop-nav"
-                aria-label="Main navigation"
-            >
-
-                <a href="#home">Home</a>
-
-                <a href="#topics">Topics</a>
-
-                <a href="#rules">Rules</a>
-
-                <a href="#submission">Submission Guidelines</a>
-
-                <a href="#prizes">Prizes</a>
-
-                <a href="#contact">Contact</a>
-
-                <a
-                    href="#registration"
-                    class="nav-register"
-                >
-                    Register Now
-                </a>
-
-            </nav>
-
-
-            <!-- Mobile Menu Button -->
-
-            <button
-                class="menu-toggle"
-                id="menuToggle"
-                type="button"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-                aria-controls="mobileMenu"
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
+        <div class="hidden md:flex space-x-6 items-center">
+            <a href="#home" class="text-gray-600 hover:text-blue-600 transition">Home</a>
+            <a href="#topics" class="text-gray-600 hover:text-blue-600 transition">Topics</a>
+            <a href="#rules" class="text-gray-600 hover:text-blue-600 transition">Rules</a>
+            <a href="#submission-guidelines" class="text-gray-600 hover:text-blue-600 transition">Submission Guidelines</a>
+            <a href="#prizes" class="text-gray-600 hover:text-blue-600 transition">Prizes</a>
+            <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-V4E0XXRO59Q0WBH-2FjlLU0S-XS_hb7s7O95_1O5_PFxkg/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="bg-highlight-blue text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition shadow">Register Now</a>
         </div>
 
-    </header>
-
-
-    <!-- =========================
-         MOBILE NAVIGATION
-    ========================== -->
-
-    <div
-        class="mobile-overlay"
-        id="mobileOverlay"
-        aria-hidden="true"
-    ></div>
-
-
-    <aside
-        class="mobile-menu"
-        id="mobileMenu"
-        aria-label="Mobile navigation"
-        aria-hidden="true"
-    >
-
-        <div class="mobile-menu-header">
-
-            <a
-                href="#home"
-                class="brand mobile-brand"
-            >
-                <span class="brand-name">ANAZORI</span>
-                <span class="brand-edition">V16.0</span>
-            </a>
-
-            <button
-                class="menu-close"
-                id="menuClose"
-                type="button"
-                aria-label="Close navigation menu"
-            >
-                &times;
+    </nav>
+    
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 bg-white shadow-xl z-50 p-6 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-xl font-bold">Menu</h2>
+            <button id="close-menu-button" class="text-gray-800 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
-
         </div>
-
-
-        <nav class="mobile-nav">
-
-            <a href="#home">Home</a>
-
-            <a href="#topics">Topics</a>
-
-            <a href="#rules">Rules</a>
-
-            <a href="#submission">
-                Submission Guidelines
-            </a>
-
-            <a href="#prizes">Prizes</a>
-
-            <a href="#contact">Contact</a>
-
-            <a
-                href="#registration"
-                class="mobile-register"
-            >
-                Register Now
-            </a>
-
-        </nav>
-
-    </aside>
-
-
-    <!-- =========================
-         MAIN
-    ========================== -->
-
-    <main id="main-content">
-
-
-        <!-- =========================
-             HERO
-        ========================== -->
-
-        <section
-            class="hero section"
-            id="home"
-        >
-
-            <div class="container">
-
-                <div class="hero-grid">
-
-                    <div class="hero-content">
-
-                        <p class="eyebrow">
-                            Paper Presentation · 2026
-                        </p>
-
-                        <h1>
-                            Welcome to
-                            <span>ANAZORI V16.0</span>
-                        </h1>
-
-                        <p class="hero-description">
-                            If you believe your research is extraordinary
-                            and can bridge existing gaps in the field,
-                            the Centre for Computer Science and Applications
-                            (CCSA) at Dibrugarh University invites you to
-                            showcase your work at ANAZORI's Paper Presentation.
-                        </p>
-
-                        <p class="hero-description">
-                            This event is a platform to demonstrate your
-                            research skills, public speaking abilities and
-                            confidence. Don't miss the chance to make your
-                            mark in the academic world!
-                        </p>
-
-
-                        <div class="hero-actions">
-
-                            <a
-                                href="#registration"
-                                class="button button-primary"
-                            >
-                                Registration Details
-                            </a>
-
-                            <a
-                                href="#event-details"
-                                class="button button-secondary"
-                            >
-                                View Event Details
-                            </a>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Event Summary Card -->
-
-                    <div
-                        class="hero-card"
-                        id="event-details"
-                    >
-
-                        <div class="hero-card-top">
-
-                            <span class="status-dot"></span>
-
-                            <span>
-                                ANAZORI V16.0
-                            </span>
-
-                        </div>
-
-
-                        <div class="event-main-date">
-
-                            <span class="date-day">
-                                05
-                            </span>
-
-                            <div>
-                                <span class="date-month">
-                                    NOVEMBER
-                                </span>
-
-                                <span class="date-year">
-                                    2026
-                                </span>
-                            </div>
-
-                        </div>
-
-
-                        <div class="event-info-list">
-
-                            <div class="event-info-item">
-
-                                <span class="event-label">
-                                    Reporting Time
-                                </span>
-
-                                <strong>
-                                    10:00 AM
-                                </strong>
-
-                            </div>
-
-
-                            <div class="event-info-item">
-
-                                <span class="event-label">
-                                    Venue
-                                </span>
-
-                                <strong>
-                                    Indira Miri Conference Hall,
-                                    Dibrugarh University
-                                </strong>
-
-                            </div>
-
-
-                            <div class="event-info-item">
-
-                                <span class="event-label">
-                                    Registration Deadline
-                                </span>
-
-                                <strong>
-                                    4th November 2026
-                                </strong>
-
-                            </div>
-
-
-                            <div class="event-info-item">
-
-                                <span class="event-label">
-                                    Paper / Abstract Submission
-                                </span>
-
-                                <strong>
-                                    On the day of presentation
-                                </strong>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
+        <div class="space-y-4">
+            <a href="#home" class="block text-gray-600 hover:text-blue-600 transition text-lg">Home</a>
+            <a href="#topics" class="block text-gray-600 hover:text-blue-600 transition text-lg">Topics</a>
+            <a href="#rules" class="block text-gray-600 hover:text-blue-600 transition text-lg">Rules</a>
+            <a href="#submission-guidelines" class="block text-gray-600 hover:text-blue-600 transition text-lg">Submission Guidelines</a>
+            <a href="#prizes" class="block text-gray-600 hover:text-blue-600 transition text-lg">Prizes</a>
+            <a href="#contact" class="block text-gray-600 hover:text-blue-600 transition text-lg">Contact</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-V4E0XXRO59Q0WBH-2FjlLU0S-XS_hb7s7O95_1O5_PFxkg/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="block bg-highlight-blue text-white text-center font-semibold mt-4 px-4 py-2 rounded-lg hover:bg-blue-700 transition shadow">Register Now</a>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <section id="home" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+                    Welcome to <span class="highlight-blue">ANAZORI V15.O</span> 2025
+                </h1>
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                If you believe your research is extraordinary and can bridge existing gaps in the field, the Centre for Computer Science and Applications (CCSA) at Dibrugarh University invites you to showcase your work at ANAZORI's Paper Presentation. This event is a platform to demonstrate your research skills, public speaking abilities and confidence. Don't miss the chance to make your mark in the academic world!                </p>
+                
+                <div class="mt-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Ready to Present Your Idea?</h2>
+                    <p class="mt-4 text-lg text-gray-600">Registration is now open! Click the button below to secure your spot.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-V4E0XXRO59Q0WBH-2FjlLU0S-XS_hb7s7O95_1O5_PFxkg/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="mt-8 inline-block bg-highlight-blue text-white font-bold text-lg px-8 py-4 rounded-lg hover:bg-blue-700 transition-transform transform hover:scale-105 shadow-lg">
+                        Register Now
+                    </a>
                 </div>
 
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="info-card p-6">
+                        <h3 class="text-xl font-bold mb-2">Date</h3>
+                        <p class="text-gray-600 text-lg">October 24th, 2025</p>
+                    </div>
+                    <div class="info-card p-6">
+                        <h3 class="text-xl font-bold mb-2">Time</h3>
+                        <p class="text-gray-600 text-lg">10:00 AM Onwards</p>
+                    </div>
+                    <div class="info-card p-6">
+                        <h3 class="text-xl font-bold mb-2">Venue</h3>
+                        <p class="text-gray-600 text-lg">Indira Miri Conference Hall</p>
+                    </div>
+                </div>
             </div>
-
         </section>
 
-
-        <!-- =========================
-             REGISTRATION
-        ========================== -->
-
-        <section
-            class="registration section section-soft"
-            id="registration"
-        >
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        Registration
-                    </p>
-
-                    <h2>
-                        Ready to Present Your Idea?
-                    </h2>
-
-                    <p>
-                        Registration details for ANAZORI V16.0
-                        will be available soon.
-                    </p>
-
+        <section id="topics" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Presentation Topics</h2>
+                    <p class="text-gray-600 mt-2">Choose from a diverse range of technical and non-technical subjects.</p>
                 </div>
-
-
-                <div class="registration-grid">
-
-                    <div class="registration-card">
-
-                        <div class="card-number">
-                            01
-                        </div>
-
-                        <h3>
-                            Registration
-                        </h3>
-
-                        <p>
-                            Registration will open soon.
-                            The official Google Form will be
-                            added here once it is created.
-                        </p>
-
-                        <span class="coming-soon">
-                            Coming Soon
-                        </span>
-
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="info-card">
+                        <h3 class="text-2xl font-bold mb-6 text-center border-b pb-4">Technical Topics</h3>
+                        <ul class="space-y-4 list-disc list-inside text-gray-700">
+                            <li>Ethical AI: Balancing Innovation with Privacy, Fairness, and Accountability</li>
+                            <li>Generative AI in Research and Education: Opportunities, Risks, and the Road Ahead</li>
+                            <li>Edge Computing vs Cloud Computing: The Future of Real-Time Data Processing</li>
+                            <li>Quantum Computing: Implications for Cybersecurity and Data Privacy</li>
+                            <li>AI for Social Good: Leveraging Machine Learning to Tackle Climate, Health, and Education Challenges</li>
+                        </ul>
                     </div>
-
-
-                    <div class="registration-card">
-
-                        <div class="card-number">
-                            02
-                        </div>
-
-                        <h3>
-                            Registration Deadline
-                        </h3>
-
-                        <p>
-                            Complete your registration before
-                            the deadline.
-                        </p>
-
-                        <strong class="deadline">
-                            4th November 2026
-                        </strong>
-
+                    <div class="info-card">
+                        <h3 class="text-2xl font-bold mb-6 text-center border-b pb-4">Non-Technical Topics</h3>
+                        <ul class="space-y-4 list-disc list-inside text-gray-700">
+                            <li>Digital Well-being: The Impact of Social Media and Technology on Student Mental Health</li>
+                            <li>Gender and Technology: Bridging the Digital Divide in India</li>
+                            <li>The Culture of Hustle: Rethinking Productivity, Work-Life Balance, and Success</li>
+                            <li>Climate Justice: How Vulnerable Communities Face Unequal Impacts of Climate Change</li>
+                            <li>Storytelling as a Tool for Social Change: From Folk Narratives to Digital Media</li>
+                        </ul>
                     </div>
-
-
-                    <div class="registration-card">
-
-                        <div class="card-number">
-                            03
-                        </div>
-
-                        <h3>
-                            Registration QR
-                        </h3>
-
-                        <p>
-                            The registration QR code will be
-                            added once registration is available.
-                        </p>
-
-                        <span class="coming-soon">
-                            QR Coming Soon
-                        </span>
-
-                    </div>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- =========================
-             TOPICS
-        ========================== -->
-
-        <section
-            class="section"
-            id="topics"
-        >
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        Paper Presentation
-                    </p>
-
-                    <h2>
-                        V16.0 Topics
-                    </h2>
-
-                    <p>
-                        The official topics for ANAZORI V16.0
-                        have not been decided yet.
-                    </p>
-
+        <section id="rules" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Rules & Guidelines</h2>
+                    <p class="text-gray-600 mt-2">Please adhere to the following rules for a fair competition.</p>
                 </div>
-
-
-                <div class="announcement-card">
-
-                    <div class="announcement-icon">
-                        —
-                    </div>
-
-                    <div>
-
-                        <span class="announcement-label">
-                            To Be Announced
-                        </span>
-
-                        <h3>
-                            Topics will be announced soon.
-                        </h3>
-
-                        <p>
-                            Please check this section again once
-                            the official V16.0 topics are finalized.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             RULES
-        ========================== -->
-
-        <section
-            class="section section-soft"
-            id="rules"
-        >
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        Guidelines
-                    </p>
-
-                    <h2>
-                        Rules & Guidelines
-                    </h2>
-
-                    <p>
-                        The rules and presentation guidelines for
-                        V16.0 are currently being finalized.
-                    </p>
-
-                </div>
-
-
-                <div class="placeholder-grid">
-
-                    <article class="placeholder-card">
-
-                        <span class="placeholder-number">
-                            01
-                        </span>
-
-                        <h3>
-                            Presentation Rules
-                        </h3>
-
-                        <p>
-                            Official presentation rules will
-                            be announced soon.
-                        </p>
-
-                        <span class="coming-soon">
-                            To Be Announced
-                        </span>
-
-                    </article>
-
-
-                    <article class="placeholder-card">
-
-                        <span class="placeholder-number">
-                            02
-                        </span>
-
-                        <h3>
-                            Evaluation Criteria
-                        </h3>
-
-                        <p>
-                            Details regarding evaluation and
-                            judging will be announced soon.
-                        </p>
-
-                        <span class="coming-soon">
-                            To Be Announced
-                        </span>
-
-                    </article>
-
-
-                    <article class="placeholder-card">
-
-                        <span class="placeholder-number">
-                            03
-                        </span>
-
-                        <h3>
-                            Presentation Format
-                        </h3>
-
-                        <p>
-                            The official presentation format
-                            will be published later.
-                        </p>
-
-                        <span class="coming-soon">
-                            To Be Announced
-                        </span>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             SUBMISSION
-        ========================== -->
-
-        <section
-            class="section"
-            id="submission"
-        >
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        Submission
-                    </p>
-
-                    <h2>
-                        Paper & Abstract Submission
-                    </h2>
-
-                    <p>
-                        The detailed submission guidelines for
-                        ANAZORI V16.0 are yet to be finalized.
-                    </p>
-
-                </div>
-
-
-                <div class="submission-highlight">
-
-                    <div>
-
-                        <span class="announcement-label">
-                            Current Information
-                        </span>
-
-                        <h3>
-                            Submission is on the day of presentation.
-                        </h3>
-
-                        <p>
-                            Participants will submit their paper or
-                            abstract on the day of the presentation.
-                            Further formatting and submission
-                            requirements will be announced later.
-                        </p>
-
-                    </div>
-
-
-                    <div class="submission-date">
-
-                        <span>
-                            Submission
-                        </span>
-
-                        <strong>
-                            5 Nov
-                        </strong>
-
-                        <small>
-                            2026
-                        </small>
-
-                    </div>
-
-                </div>
-
-
-                <div class="notice-box">
-
-                    <strong>
-                        Detailed guidelines
-                    </strong>
-
-                    <span>
-                        To Be Announced
-                    </span>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             PRIZES
-        ========================== -->
-
-        <section
-            class="section section-soft"
-            id="prizes"
-        >
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        Recognition
-                    </p>
-
-                    <h2>
-                        Prizes
-                    </h2>
-
-                    <p>
-                        Showcase your research and compete for
-                        a total prize pool of ₹7,000/-.
-                    </p>
-
-                </div>
-
-
-                <div class="prize-total">
-
-                    <span>
-                        Total Prize Pool
-                    </span>
-
-                    <strong>
-                        ₹7,000/-
-                    </strong>
-
-                </div>
-
-
-                <div class="prize-grid">
-
-                    <article class="prize-card">
-
-                        <span class="prize-rank">
-                            01
-                        </span>
-
-                        <span class="prize-place">
-                            First Prize
-                        </span>
-
-                        <strong>
-                            ₹4,000/-
-                        </strong>
-
-                    </article>
-
-
-                    <article class="prize-card">
-
-                        <span class="prize-rank">
-                            02
-                        </span>
-
-                        <span class="prize-place">
-                            Second Prize
-                        </span>
-
-                        <strong>
-                            ₹2,000/-
-                        </strong>
-
-                    </article>
-
-
-                    <article class="prize-card">
-
-                        <span class="prize-rank">
-                            03
-                        </span>
-
-                        <span class="prize-place">
-                            Third Prize
-                        </span>
-
-                        <strong>
-                            ₹1,000/-
-                        </strong>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             WHATSAPP / COMMUNITY
-        ========================== -->
-
-        <section class="section">
-
-            <div class="container">
-
-                <div class="community-card">
-
-                    <div class="community-content">
-
-                        <p class="eyebrow">
-                            Stay Connected
-                        </p>
-
-                        <h2>
-                            Join the ANAZORI Community
-                        </h2>
-
-                        <p>
-                            The official WhatsApp group link and
-                            QR code will be added once they are created.
-                        </p>
-
-                        <span class="coming-soon">
-                            WhatsApp Group Coming Soon
-                        </span>
-
-                    </div>
-
-
-                    <div class="qr-placeholder">
-
-                        <span>
-                            QR
-                        </span>
-
-                        <small>
-                            Coming Soon
-                        </small>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             CONTACT
-        ========================== -->
-
-        <section
-            class="section section-soft"
-            id="contact"
-        >
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        Contact
-                    </p>
-
-                    <h2>
-                        Get in Touch
-                    </h2>
-
-                    <p>
-                        For event-related queries, contact the
-                        event coordinator.
-                    </p>
-
-                </div>
-
-
-                <div class="contact-grid">
-
-                    <article class="contact-card">
-
-                        <div class="contact-icon">
-                            B
-                        </div>
-
+                <div class="max-w-4xl mx-auto info-card text-left">
+                    <div class="space-y-6 text-gray-700">
                         <div>
-
-                            <span class="contact-role">
-                                Event Coordinator
-                            </span>
-
-                            <h3>
-                                Bondita Boruah
-                            </h3>
-
-                            <a
-                                href="tel:0000000000"
-                                class="contact-link"
-                            >
-                                +91 0000000000
-                            </a>
-
-                            <span class="contact-email">
-                                Email — To Be Added
-                            </span>
-
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">1. Presentation Duration</h4>
+                            <ul class="list-disc list-inside pl-4 space-y-1">
+                                <li>Maximum Time Allowed: 10 minutes, including the introduction, content delivery, and conclusion.</li>
+                                <li>Exceeding the time limit will result in a gentle reminder from the moderator, and presentations may be cut off if significantly over time.</li>
+                            </ul>
                         </div>
-
-                    </article>
-
-
-                    <article class="contact-card contact-coming">
-
-                        <div class="contact-icon">
-                            @
-                        </div>
-
                         <div>
-
-                            <span class="contact-role">
-                                Email
-                            </span>
-
-                            <h3>
-                                Contact Email
-                            </h3>
-
-                            <span class="contact-email">
-                                Email address will be added later.
-                            </span>
-
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">2. Structure & Flow</h4>
+                            <ul class="list-disc list-inside pl-4 space-y-1">
+                                <li><strong>Introduction (1 minute):</strong> Presenters should briefly introduce themselves and the topic.</li>
+                                <li><strong>Main Content (7 minutes):</strong> Key points must be delivered concisely, focusing on the most relevant and impactful aspects of the subject.</li>
+                                <li><strong>Conclusion (1 minute):</strong> Summarize the presentation's main ideas and provide a final thought or takeaway.</li>
+                                <li><strong>Optional Q&A:</strong> If allowed, presenters may use the final minute for a brief interaction with the audience.</li>
+                            </ul>
                         </div>
-
-                    </article>
-
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">3. Visual Aids & Slides</h4>
+                            <ul class="list-disc list-inside pl-4 space-y-1">
+                                <li><strong>Slide Count:</strong> Limit the number of slides to 6-8 to avoid overwhelming the audience.</li>
+                                <li><strong>Clarity & Simplicity:</strong> Slides should be minimalistic, avoiding excessive text. Focus on visuals, graphs, and key points.</li>
+                                <li><strong>Font & Size:</strong> Use legible fonts and sizes (minimum 24pt for text).</li>
+                                <li><strong>Compatibility:</strong> Ensure your presentation format (e.g., PowerPoint, PDF) is compatible with the event’s AV system.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">4. Technical Setup</h4>
+                            <ul class="list-disc list-inside pl-4 space-y-1">
+                                <li><strong>Check-in Time:</strong> Presenters must arrive at least 30 minutes before the session begins for a technical check.</li>
+                                <li><strong>Backup:</strong> Bring a copy of the presentation on a USB drive and upload it to a cloud platform.</li>
+                                <li><strong>Mic & Sound Check:</strong> Verify the microphone and AV setup before the presentation begins.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">5. Content & Presentation Etiquette</h4>
+                             <ul class="list-disc list-inside pl-4 space-y-1">
+                                 <li>The content must align with the assigned topic and should focus on meaningful insights, research, or case studies.</li>
+                                 <li>Engage the audience through interactive elements, thought-provoking questions, or real-life examples.</li>
+                                 <li>Presenters should dress appropriately and maintain a professional tone.</li>
+                                 <li>Maintain eye contact with the audience and use gestures to emphasize points, avoiding reading from slides.</li>
+                             </ul>
+                        </div>
+                         <div>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">6. Submission Requirements</h4>
+                             <ul class="list-disc list-inside pl-4 space-y-1">
+                                 <li>Provide references for all sources used in the research.</li>
+                                 <li>Submit a hardcopy of the researched paper on the day of the event.</li>
+                             </ul>
+                        </div>
+                         <div>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">Evaluation Criteria</h4>
+                            <p class="mb-2">Presentations will be evaluated based on the following:</p>
+                             <ol class="list-roman list-inside pl-4 space-y-1">
+                                 <li><strong>Clarity & Organization:</strong> How well the presentation is structured and easy to follow.</li>
+                                 <li><strong>Content Relevance:</strong> The relevance and depth of the content presented.</li>
+                                 <li><strong>Time Management:</strong> Staying within the 10-minute time limit.</li>
+                                 <li><strong>Engagement:</strong> The ability to maintain audience interest and interaction.</li>
+                                 <li><strong>Use of Visuals:</strong> The effectiveness of slides and visual aids in complementing the talk.</li>
+                             </ol>
+                        </div>
+                        <div class="border-t pt-4 mt-6">
+                            <p class="text-center font-bold text-gray-900">** The decision of the judge(s) will be final and binding. **</p>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-
         </section>
+        
+        <section id="submission-guidelines" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Paper Submission Guidelines</h2>
+                    <p class="text-gray-600 mt-2">Please follow these guidelines for your hard copy submission.</p>
+                </div>
+                <div class="max-w-4xl mx-auto info-card text-left">
+                    <div class="space-y-6 text-gray-700">
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">General Guidelines</h4>
+                            <ul class="list-disc list-inside pl-4 space-y-1">
+                                <li>Hard copies must be submitted on the day of presentation.</li>
+                                <li><b>Language:</b> Use concise and clear English/Assamese. Non-English terms, including plant and species nomenclature, should be italicized.</li>
+                                <li><b>Formatting:</b> Use A4 paper size, 1.15 line spacing, Times New Roman font, size 12. Maintain one-inch margins on all sides.</li>
+                                <li><b>Tables and Figures:</b> Include them in the main text at the relevant sections with proper numbering and captions.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">Structure</h4>
+                            <p>Manuscripts must follow this structure:</p>
+                            <ul class="list-disc list-inside pl-4 space-y-1">
+                                <li>Title Page</li>
+                                <li>Abstract</li>
+                                <li>Keywords</li>
+                                <li>Main Text</li>
+                                <li>Acknowledgments</li>
+                                <li>References</li>
+                                <li>List of Tables and Figures (with captions)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">Title Page</h4>
+                            <p>Include the following details:</p>
+                            <ul class="list-disc list-inside pl-4 space-y-1">
+                                <li><b>Title of the paper</b> (All caps, font size 14, bold).</li>
+                                <li><b>Author names</b> (font size 12, bold).</li>
+                                <li><b>Affiliations</b> (departments and institutions of all authors).</li>
+                                <li><b>Corresponding author's name, address, email, and phone number.</b></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">Abstract</h4>
+                            <ul class="list-disc list-inside pl-4 space-y-1">
+                                <li>Each article must have an abstract (200-250 words).</li>
+                                <li>For research articles, use structured headings like Background, Objective, Methods, Results, and Conclusion.</li>
+                                <li>Avoid abbreviations and references in the abstract.</li>
+                                <li>Provide 3-5 keywords.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">Main Text</h4>
+                            <p>The main text must include appropriate headings and subheadings. For research articles, use the following format:</p>
+                            <ul class="list-disc list-inside pl-4 space-y-1">
+                                <li>Introduction</li>
+                                <li>Materials and Methods</li>
+                                <li>Results and Discussion</li>
+                                <li>Conclusion</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">References</h4>
+                            <ul class="list-disc list-inside pl-4 space-y-1">
+                                <li>Use the Vancouver referencing style.</li>
+                                <li>Number references consecutively in the text [1], [2-5], etc.</li>
+                                <li>Use reference management tools like Mendeley or Zotero.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">Figures and Tables</h4>
+                            <ul class="list-disc list-inside pl-4 space-y-1">
+                                <li>Number tables and figures consecutively (e.g., Table 1, Fig. 1).</li>
+                                <li>Ensure captions are clear and concise.</li>
+                                <li>Place them in the main text and include a list of captions at the end.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <section id="prizes" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Prizes & Recognition</h2>
+                    <p class="text-gray-600 mt-2">Winners will be rewarded with cash prizes and certificates.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="info-card border-t-4 border-yellow-400">
+                        <h3 class="text-2xl font-bold mb-2">1st Place</h3>
+                        <p class="text-3xl font-bold highlight-blue my-4">₹4,000</p>
+                        <p class="text-gray-600">Certificate of Excellence</p>
+                    </div>
+                    <div class="info-card border-t-4 border-gray-400">
+                        <h3 class="text-2xl font-bold mb-2">2nd Place</h3>
+                        <p class="text-3xl font-bold highlight-blue my-4">₹2,000</p>
+                        <p class="text-gray-600">Certificate of Excellence</p>
+                    </div>
+                    <div class="info-card border-t-4 border-orange-400">
+                        <h3 class="text-2xl font-bold mb-2">3rd Place</h3>
+                        <p class="text-3xl font-bold highlight-blue my-4">₹1,000</p>
+                        <p class="text-gray-600">Certificate of Excellence</p>
+                    </div>
+                </div>
+                 <p class="text-center mt-8 text-gray-600">All participants will receive a Certificate of Participation.</p>
+            </div>
+        </section>
+        
+        <footer id="contact" class="py-16 bg-white">
+          <div class="container mx-auto px-6 text-center">
+               <h2 class="text-3xl font-bold text-gray-900 mb-8">Contact Us & Support</h2>
+               
+               <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
+                     <div class="coordinator">
+                         <p class="text-xl font-semibold">Bondita Boruah</p>
+                         <p class="text-gray-600 mt-1">Event Coordinator</p>
+                         <a href="tel:+918133034476" class="highlight-blue hover:underline">+91 8133034476</a>
+                     </div>
+                     <div class="coordinator">
+                         <p class="text-xl font-semibold">Hari Sah</p>
+                         <p class="text-gray-600 mt-1">Event Coordinator</p>
+                         <a href="tel:+919957875714" class="highlight-blue hover:underline">+91 9957875714</a>
+                     </div>
+               </div>
 
+               <div class="mt-16">
+                   <h3 class="text-2xl font-bold text-gray-800">Join our Helpdesk!</h3>
+                   <p class="text-gray-600 mt-2">Scan the QR code below to join our WhatsApp group for any queries.</p>
+                   <img src="QR.jpg" alt="Paper Presentation Helpdesk WhatsApp Group QR Code" class="mx-auto mt-4 w-48 h-48 rounded-lg shadow-lg border-4 border-white">
+               </div>
+
+               <p class="text-gray-500 mt-16 text-sm">&copy; 2025 ANAZORI 15.O. All rights reserved.</p>
+          </div>
+        </footer>
     </main>
 
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMenuButton = document.getElementById('close-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const navLinks = mobileMenu.querySelectorAll('a');
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
+        // Function to open the drawer
+        const openDrawer = () => {
+            mobileMenu.classList.remove('-translate-x-full');
+            mobileMenuOverlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        };
 
-    <footer class="site-footer">
+        // Function to close the drawer
+        const closeDrawer = () => {
+            mobileMenu.classList.add('-translate-x-full');
+            mobileMenuOverlay.classList.add('hidden');
+            document.body.style.overflow = ''; // Allow background scrolling
+        };
 
-        <div class="container footer-inner">
+        // Event listeners
+        mobileMenuButton.addEventListener('click', openDrawer);
+        closeMenuButton.addEventListener('click', closeDrawer);
+        mobileMenuOverlay.addEventListener('click', closeDrawer);
 
-            <div>
-
-                <a
-                    href="#home"
-                    class="footer-brand"
-                >
-                    ANAZORI V16.0
-                </a>
-
-                <p>
-                    Paper Presentation · Dibrugarh University
-                </p>
-
-            </div>
-
-
-            <div class="footer-date">
-
-                <span>
-                    5th November 2026
-                </span>
-
-                <span>
-                    Indira Miri Conference Hall
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <div class="container footer-bottom">
-
-            <p>
-                © 2026 ANAZORI V16.0. All rights reserved.
-            </p>
-
-            <a href="#home">
-                Back to top ↑
-            </a>
-
-        </div>
-
-    </footer>
-
-
-    <script src="script.js"></script>
-
+        // Close the drawer when any navigation link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', closeDrawer);
+        });
+    </script>
 </body>
 </html>
